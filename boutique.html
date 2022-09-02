@@ -1,0 +1,298 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Evolium</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="utf-8">
+
+	<link rel="stylesheet" type="text/css" href="css/boutique.css">
+	<link rel="icon" href="assets/logo.png">
+
+	<!-- Font -->
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans:700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans:400" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet"> 
+
+	<!-- Bootstrap -->
+	<link rel="stylesheet" type="text/css" href="css/bootstrap/bootstrap-grid.min.css">
+	<link rel="stylesheet" type="text/css" href="js/bootstrap/bootstrap.min.js">
+
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
+	<script src="https://kit.fontawesome.com/e087c30ab1.js" crossorigin="anonymous"></script>
+	<script src="js/boutique.js"></script>
+
+</head>
+<body>
+
+	<button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-arrow-up"></i></button> 
+	
+	<!-- Navbar -->
+	<div class="topnav" id="myTopnav">
+		<div class="max-width">
+			  <a href="#head">Home</a>
+			  <a href="#about">About</a>
+			  <a href="#gamemodes">Gamemodes</a>
+			  <a href="#vote">Vote</a>
+			  <a href="#staff">Staff</a>
+		  	  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+		</div>
+	</div>
+	<!-- End Navbar -->
+
+	<!-- Header (Banner) -->
+	<header id="head" class="parallax">
+		<h1>Evolium v1.0</h1>
+		<h3>play.evolium.fr</h3>
+	</header>
+	<!-- End Header -->
+
+	<!-- About Section -->
+	<section id="about">
+		<h1>Boutique</h1>
+		<p>Nos grades</p>
+		<hr>
+		<!-- First row of features -->
+		<div class="row features">
+			<div class="col">
+				<div class="content">
+					<div class="card">
+						<img src="assets/grade1.png" alt="">
+						<i class="fa-solid fa-shield fa-2xl" id="image"></i>
+						<h2>Basique</h2>
+						<p>Un grade un chouia plus que Basique</p>
+						<button class="button" onclick="sendMessage()">Commander</button>
+					</div>
+				</div>
+			</div>
+			<div class="col">
+				<div class="content">
+					<div class="card">
+						<img src="assets/grade2.jpeg" alt="">
+						<i class="fa-solid fa-star fa-2xl" id="image"></i>
+						<h2 class="standard">Standard</h2>
+						<p>Quoi de mieux que le standard<br>
+							un bon compromis, non ?</p>
+						<button class="button" onclick="basic()">Commander</button>
+					</div>
+				</div>
+			</div>
+			<div class="col">
+				<div class="content">
+					<div class="card">
+						<img src="assets/grade3.webp" alt="">
+						<i class="fa-solid fa-rocket fa-2xl" id="image"></i>
+						<h2>Premium</h2>
+						<p>On se sent tous de suite mieux en tant que privilégié</p>
+						<button class="button" onclick="new basic()">Commander</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- End first row -->
+
+		<!-- Note: You can add as many feature rows as you like. -->
+	</section>
+	<!-- End about section -->
+
+	<!-- Vote Section -->
+	<section id="vote">
+		<h1>Soutenez le serveur en votant !</h1>
+		<p>Chaque vote compte, c'est pour cela que un vote = une récompense ;)</p>
+		<hr>
+		<div class="row votelist">
+			<!-- First Vote Link -->
+			<div class="col-md voteblock">
+				<img class="res-img-sm" src="https://www.planetminecraft.com/images/layout/planetminecraft_logo.png">
+				<h2>PlanetMinecraft</h2>
+				<a href="#">Vote now</a>
+			</div>
+			<!-- End First Vote Link -->
+
+			<!-- Second Vote Link -->
+			<div class="col-md voteblock">
+				<img class="res-img-sm" src="https://yt3.ggpht.com/-St0amFDpbC0/AAAAAAAAAAI/AAAAAAAAAAA/eZlt0WfF-F8/s288-mo-c-c0xffffffff-rj-k-no/photo.jpg">
+				<h2>ServerPact</h2>
+				<a href="#">Vote now</a>
+			</div>
+			<!-- End Second Vote Link -->
+
+			<!-- Third Vote Link -->
+			<div class="col-md voteblock">
+				<img class="res-img-sm" src="assets/mp.jpeg">
+				<h2>MinecraftMP</h2>
+				<a href="#">Vote now</a>
+			</div>
+			<!-- End Third Vote Link -->
+		</div>
+
+		<!-- Note -->
+		<p>Une récompense peut prendre jusqu'a 10 minutes pour être distribué, si aucune récompense à été distribué, contacter un membre du staff</p>
+	</section>
+	<!-- End Vote Section -->
+
+	<!-- Third Banner -->
+	<section id="banner3" class="parallax">
+		<h1>Une question ?</h1>
+		<h2>Contacter nous sur discord <i><a href="mailto:#">discord.evolium.fr</a></i></h2>
+	</section>
+	<!-- End Third Section -->
+
+	<!-- Staff Section -->
+	<section id="staff">
+		<h1>Notre staff</h1>
+		<p>Le staff de notre serveur</p>
+		<hr>
+		<!-- First Row Staff -->
+		<div class="row stafflist">
+			<!-- First Staff Member -->
+			<div class="col-md staffblock">
+				<img width="100px;" src="assets/palmus.gif">
+				<h2>Palmus</h2>
+				<p>Fondateur</p>
+			</div>
+			<!-- End First Staff Member -->
+
+			<!-- Second Staff Member -->
+			<div class="col-md staffblock">
+				<img width="100px;" src="assets/panda.png">
+				<h2>PsycoPatate</h2>
+				<p>Fondateur</p>
+			</div>
+			<!-- End Second Staf Member -->
+
+			<!-- Third Staff Member -->
+			<div class="col-md staffblock">
+				<img width="100px;" src="assets/nearox.png">
+				<h2>Nearox</h2>
+				<p>Développeur</p>
+			</div>
+			<!-- End Third Staff Member -->
+		</div>
+		<!-- End First Row Staff -->
+
+		<!-- Second Row Staff Member -->
+		<div class="row stafflist">
+			<!-- Fourth Staff Member -->
+			<div class="col-md staffblock">
+				<img width="100px;" src="assets/sweeftyz.png">
+				<h2>Sweeftyz</h2>
+				<p>Développeur</p>
+			</div>
+			<!-- End Fourth Staff Member -->
+
+			<!-- Fifth Staff Member -->	
+			<div class="col-md staffblock">
+				<img width="100px;" src="assets/lapeche_sauvage.png">
+				<h2>Lapeche_sauvage</h2>
+				<p>Buildeur</p>
+			</div>
+			<!-- End Fifth Staff Member -->
+
+			<!-- Sixth Staff Member -->
+			<div class="col-md staffblock">
+				<img width="100px;" src="assets/flamby.png">
+				<h2>Flamby</h2>
+				<p>Buildeur</p>
+			</div>
+			<!-- End Sixth Staf Member -->
+		</div>
+		<!-- End Second Row Staff -->
+	</section>
+	<!-- End Staff Section -->
+
+	<!-- Footer -->
+	<footer>
+		<div class="footer">
+			<div class="copyright-notice">
+				<!-- !! Replace this with your own domain !! -->
+				<p>evolium.fr &copy; | All rights reserved</p>
+				<!-- If you want to, you're allowed to delete these credits. But if you want to support my work, please leave it. -->
+				<p>Made with <font color="red">❤</font> by <a target="_blank" href="https://evolium.fr">Palmus</a>.</font></p>
+			</div>
+		</div>
+	</footer>
+	<!-- End Footer -->
+
+	<!-- Smooth Scrolling Script (from https://goo.gl/uWLqWu) | Do not touch if you don't know what you're doing! -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script>
+		$(document).ready(function(){
+		  // Add smooth scrolling to all links
+		  $("a").on('click', function(event) {
+
+		    // Make sure this.hash has a value before overriding default behavior
+		    if (this.hash !== "") {
+		      // Prevent default anchor click behavior
+		      event.preventDefault();
+
+		      // Store hash
+		      var hash = this.hash;
+
+		      // Using jQuery's animate() method to add smooth page scroll
+		      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+		      $('html, body').animate({
+		        scrollTop: $(hash).offset().top
+		      }, 100, function(){
+		   
+		        // Add hash (#) to URL when done scrolling (default click behavior)
+		        window.location.hash = hash;
+		      });
+		    } // End if
+		  });
+		});
+	</script>
+	<!-- End Smooth Scrolling Script -->
+
+	<script>
+		function myFunction() {
+		    var x = document.getElementById("myTopnav");
+		    if (x.className === "topnav") {
+		        x.className += " responsive";
+		    } else {
+		        x.className = "topnav";
+		    }
+		}
+	</script>
+
+	<script>
+		const socket = new WebSocket('ws://192.168.1.38:3000');
+
+		socket.addEventListener('open', function (event) {
+			console.log('Connected !')
+		});
+		socket.addEventListener('message', function (event) {
+			console.log('Message from server ', event.data);
+		});
+
+		const sendMessage = () => {
+			socket.send('Kzics,Sapiens');
+		}
+
+	</script>
+
+	<script>
+	// When the user scrolls down 20px from the top of the document, show the button
+	window.onscroll = function() {scrollFunction()};
+
+	function scrollFunction() {
+	    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+	        document.getElementById("myBtn").style.display = "block";
+	    } else {
+	        document.getElementById("myBtn").style.display = "none";
+	    }
+	}
+
+	// When the user clicks on the button, scroll to the top of the document
+	function topFunction() {
+	    document.body.scrollTop = 0;
+	    document.documentElement.scrollTop = 0;
+	}
+	
+	</script>
+
+</body>
+</html>
